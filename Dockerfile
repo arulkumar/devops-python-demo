@@ -5,4 +5,4 @@ COPY ./ /usr/src/
 
 WORKDIR /usr/src
 
-CMD [ "/main.py"]
+CMD ["python", "main.py"]

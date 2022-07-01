@@ -4,7 +4,7 @@ version: "3"
 services:
   devops-python-demo:
     # build: .
-    image: ghcr.io/aditiio/devops-python-demo:latest
+    image: ghcr.io/arulkumar/devops-python-demo:latest
     container_name: devops-python-demo
     restart: always
     environment:
