@@ -1,0 +1,26 @@
+# docker-compose --build
+version: "3"
+
+services:
+  devops-python-demo:
+    # build: .
+    image: ghcr.io/aditiio/devops-python-demo:latest
+    container_name: devops-python-demo
+    restart: always
+    environment:
+      - ENVIRONMENT=prod
+    ports:
+      - "7070:80"
+    expose:
+      - 80    
+    hostname: devops-python-demo.local
+    networks:
+      default:
+        ipv4_address: 172.19.0.253
+        aliases:
+          - devops-python-demo.local
+
+networks:
+  default:
+    external:
+      name: dw_bridge
