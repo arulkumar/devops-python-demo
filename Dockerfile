@@ -1,3 +1,6 @@
+# Commands used to build the image
+# docker build -t <image_name>:<tag_name> .
+
 #Use the mentioned image 
 FROM python:3.8.13-slim-bullseye
 
